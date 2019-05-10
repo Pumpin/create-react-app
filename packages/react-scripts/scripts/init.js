@@ -218,6 +218,13 @@ module.exports = function(
   const displayedCommand = useYarn ? 'yarn' : 'npm';
 
   console.log();
+  console.log(chalk.red('WELCOME TO HEADNETS CREATE REACT APP FOR UMBRACO'));
+  console.log();
+  console.log(chalk.red('VERY IMPORTANT:'));
+  console.log('Create a .env file at the root of your project with REACT_APP_PROJECT_NAME and REACT_APP_PATH');
+  console.log('You can read more about these application settings on');
+  console.log('https://headnet.dk/create-react-app');
+  console.log();
   console.log(`Success! Created ${appName} at ${appPath}`);
   console.log('Inside that directory, you can run several commands:');
   console.log();
@@ -255,7 +262,7 @@ module.exports = function(
     );
   }
   console.log();
-  console.log('Happy hacking!');
+  console.log('Happy hacking! psst... typescript is enabled');
 };
 
 function isReactInstalled(appPackage) {
